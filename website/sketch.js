@@ -9,8 +9,13 @@ var len = 100;
 var rules = []
 rules[0] = {
   a: "F",
-  b: "FF+[+F-F-F]-[-F+F+F]"
+  b: "FF+[+F-F-F[A]]-[-F+F+F]"
 }
+rules[1]= {
+  a: "A",
+  b: "TB"
+}
+
 
 // rules[1] = {
 //   a: "B",
@@ -71,6 +76,25 @@ function turtle() {
       push();
     } else if (current == "]"){
       pop();
+    } else if (current == "B"){
+      noStroke();
+      if(Math.floor(Math.random() * 3)){
+          fill(255,69,0);
+      }else{
+          fill(34,139,34);
+      }
+
+      ellipse(0, 0, 5 , 5);
+    } else if (current == "T"){
+      if(Math.floor(Math.random() * 2)){
+        rotate(angle/4);
+      }else{
+          rotate(-angle/4);
+      }
+      stroke(Math.floor((Math.random() * 255) + 1),Math.floor((Math.random() * 255) + 1),Math.floor((Math.random() * 255) + 1));
+     line(0,0,0,-len/2);
+     translate(0, -len/2);
+
     }
 
 
