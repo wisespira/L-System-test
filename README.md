@@ -3,4 +3,6 @@
 
 
 Working on musical use for L-System
-![l-system](https://user-images.githubusercontent.com/41285415/44459090-3db0ae00-a600-11e8-8acf-55d2318dc053.PNG)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/wisespira/L-System/master/its%20the%20giff.gif">
+</p>
