@@ -42,16 +42,19 @@ function generate() {
   }
 
   sentence = nextSentence;
+  
   createP(sentence);
   turtle();
 }
 
 function setup() {
+	 createP("axiom = F <br>  rules 0 = {a: F,b: FF+[+F-F-F[A]]-[-F+F+F]}<br> rules 1= {a: A, b: TB}")
   createCanvas(400, 400);
   angle = radians(25);
   background(51);
   createP(axiom);
   turtle();
+ 
   var button = createButton("generate");
   button.mousePressed(generate);
 }
